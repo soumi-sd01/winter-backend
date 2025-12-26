@@ -5,8 +5,12 @@ const cors = require("cors");
 
 const path = require("path");
 const app = express();
-app.use(cors());
-
+// Replace the old app.use(cors()) with this:
+app.use(cors({
+  origin: 'https://gleeful-fox-551b22.netlify.app', // Put your actual Netlify URL here
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
 app.use(express.json());
 
 // Serve frontend
