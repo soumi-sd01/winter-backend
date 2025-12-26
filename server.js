@@ -9,8 +9,9 @@ app.use(express.json());
 
 // Serve frontend
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "eighth.html"));
+  res.send("Backend is running");
 });
+
 
 
 function formatTime(totalMinutes) {
