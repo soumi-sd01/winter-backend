@@ -1,6 +1,8 @@
 //disclaimer! ✨ this emoji, is added by me, NOT chatgpt. its for my own comments, don't assume chatgpt. (restofthecodeishoweverwrittenbychatgpt) 
 
 const express = require("express");
+const cors = require("cors");
+
 const path = require("path");
 const app = express();
 app.use(express.json());
