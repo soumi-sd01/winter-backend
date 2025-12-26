@@ -5,11 +5,7 @@ const cors = require("cors");
 
 const path = require("path");
 const app = express();
-app.use(
-  cors({
-    origin: "https://gleeful-fox-551b22.netlify.app"
-  })
-);
+app.use(cors());
 
 app.use(express.json());
 
